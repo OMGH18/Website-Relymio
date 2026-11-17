@@ -20,7 +20,7 @@ git commit -m "Prepare Relymio public website"
 git push -u origin main
 ```
 
-When the domain is ready, configure it in GitHub Pages and add the DNS record requested by GitHub in IONOS. `CNAME.example` contains the intended hostname; copy it to `CNAME` only when the custom domain is actually attached.
+When the domain is ready, open **Settings → Pages**, keep **GitHub Actions** as the source, and enter `relymio.djabelsolutions.fr` under **Custom domain**. Then create the DNS record requested by GitHub in IONOS. With this Actions-based workflow, GitHub manages the Pages custom-domain configuration; a tracked `CNAME` file is not required. `CNAME.example` is kept only as a human-readable reference for the intended hostname.
 
 ## Routes
 
